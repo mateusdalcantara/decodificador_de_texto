@@ -90,7 +90,6 @@ button:hover {
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    gap: 60px;
     box-shadow: 1px 3px 5px 6px var(--cor-shadow);
     overflow: auto;
 
