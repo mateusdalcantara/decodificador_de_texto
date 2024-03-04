@@ -1,0 +1,204 @@
+/* Paleta de cores utilizada no projeto */
+:root {
+    --cor-backrgound: #ffffff;
+    --cor-primaria: #000000;
+    --cor-secundaria: #0A3871;
+    --cor-secundaria: #00a0fd;
+    --cor-terciaria: #000dca;
+    --cor-letra01: #ffffff;
+    --cor-letra02: #000000;
+    --cor-border: #7e7e7e;
+    --cor-hoover: #00000088;
+    --cor-shadow: #00000014;
+}
+
+.cabecalho {
+    padding: 15px 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-backrgound);
+    color: var(--cor-primaria);
+}
+
+
+.container {
+    padding: 0% 10%;
+    display: flex;
+    gap: 30px;
+}
+
+/* Posição dos botões no conteainer Criptografar e Descriptografar */
+.container__botao {
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.butaoEncriptografar {
+    width: 16.68rem;
+    border: 2px solid var(--cor-border);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-letra01);
+    border-radius: 60px;
+    padding: 3% 5%;
+    cursor: pointer;
+}
+
+.textoAviso {
+    margin: 1.25rem 0rem 0 11rem;
+}
+
+.butaoDescriptografar {
+    width: 16.68rem;
+    border: 2px solid var(--cor-border);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-letra02);
+    border-radius: 60px;
+    padding: 3% 5%;
+    cursor: pointer;
+}
+
+.butaoCopiar {
+    height: 3.125rem;
+    border: 2px solid var(--cor-border);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border-radius: 60px;
+    padding: 3% 5%;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    background-color: var(--cor-hoover);
+}
+
+
+/* Área do Output de Dados */
+.area__resultado {
+    background-color: var(--cor-backrgound);
+    border-radius: 30px;
+    word-wrap: break-word;
+    width: 40%;
+    height: 37.625rem;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    box-shadow: 1px 3px 5px 6px var(--cor-shadow);
+    overflow: auto;
+
+}
+
+.outPutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fonte da letra Output de dados */
+#resultado {
+    font-size: 30px;
+
+}
+
+/* Campo Input de dados */
+.inputs {
+    height: 22rem;
+    width: 30rem;
+    margin-bottom: 40%;
+    background-color: var(--cor-backrgound);
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    border: hidden;
+    outline: none;
+    box-shadow: 1px 3px 5px 6px var(--cor-shadow);
+}
+
+/* placeholder no html na área do input */
+::placeholder {
+    color: var(--cor-secundaria);
+}
+
+
+/* Container na direita, Output de dados */
+.destaqueDeTexto {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5% 0;
+}
+
+.resultado__imagem {
+    width: 73%;
+}
+
+.rodaPe {
+    padding: 25px;
+    text-align: center;
+}
+
+/* adaptação de tela ao exibir o programa em PC, tablets e smartphone  */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .area__texto {
+        width: auto;
+    }
+
+    .area__resultado {
+        width: auto;
+        height: auto;
+    }
+
+    .resultado__imagem {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .container__botao {
+        flex-direction: column;
+    }
+
+    .inputs {
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 5%;
+        background-color: var(--cor-backrgound);
+        color: var(--cor-secundaria);
+        font-size: 30px;
+        border: hidden;
+        outline: none;
+        box-shadow: 1px 3px 5px 6px var(--cor-shadow);
+    }
+
+    .area__resultado {
+        background-color: var(--cor-backrgound);
+        border-radius: 30px;
+        word-wrap: break-word;
+        width: 15rem;
+        height: 15rem;
+        padding: 3%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+        box-shadow: 1px 3px 5px 6px var(--cor-shadow);
+        overflow: auto;
+    }
+
+    .textoAviso {
+        margin: 5rem 0rem 0 2rem;
+
+    }
+}
