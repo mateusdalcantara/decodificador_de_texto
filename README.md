@@ -9,7 +9,7 @@
 
 * Converte vogais no texto assim que clicar no botão encriptorafar e volta ao texto original quando clicar em descriptografar. O texto precisa ter somente letras minúsculas e sem acento.(e.x maça, brasil, mateus, etc).
 
-* Funciona em Computador, Table e Celular. Que tal dar uma olhada? https://mdavir.github.io/decodificador-de-texto/Decodificador/
+* Funciona em Computador, Table e Celular.
 
 
 * As "chaves" de criptografia que utilei são:
@@ -64,7 +64,7 @@ A letra "u" é convertida para "ufat"
 * Converts vowels in the text as soon as you click on the encrypt button and returns to the original text when you click on decrypt. The all text needs to be in lowercase and without accents (e.g., hello, apple, new york, mateus, etc.)
 
 
-* Works on PC, laptop, Tablet and Smartphone. How about to see for your self? https://mdavir.github.io/decodificador-de-texto/Decodificador/
+* Works on PC, laptop, Tablet and Smartphone.
 
 
 * The encryption “keys” I used are:
