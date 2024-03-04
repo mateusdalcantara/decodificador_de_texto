@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <img class="cabecalho" src="/assets/logoAlura.png" alt="logo da Alura">
+    <div class="textoAviso">
+        <img src="assets/Frame 1.png" alt="textoAviso">
+    </div>
+    <main class="container">
+        <div class="area__texto__aviso">
+            <textarea class="inputs" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="container__botao">
+                <button id="butao01" class="butaoEncriptografar"
+                    onclick="validarEntradaCriptografia()">Criptografar</button>
+                <button id="butao02" class="butaoDescriptografar"
+                    onclick="validarEntradaDescriptografia()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="area__resultado">
+            <div id="painel__1">
+                <img class="resultado__imagem" src="./assets/foto.png">
+                <p class="destaqueTexto"><strong class="destaqueDeTexto">Nenhuma mensagem encontrada...</strong></p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <p id="resultado"></p>
+            <div id="painel__2">
+                <button id="butao03" class="butaoCopiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodaPe">
+        <p>Desenvolvido por Mateus A. 2024</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
